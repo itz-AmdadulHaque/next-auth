@@ -1,3 +1,29 @@
+# Authentication with [NextAuth](https://next-auth.js.org/)
+
+In this project we applied authentication with github and with menual username and password. when we login using user name and password there will be no images. And when we login with github, we are showing the images of the github account. <b>Always remember to config 'next.config.js' when pulling images from thrid party auth provider</b>
+
+seee the given file
+
+- api/auth/[...nextauth]/route.js
+- api/auth/[...nextauth]/options.js
+
+you don't have to create a signIn or signOut page next-auth will provide it. you just have to use the below paths
+
+- /api/auth/signin
+- api/auth/signout
+
+see the file [/component/Navbar.tsx]<br/>
+start the server using `npm run dev` and
+see how authentication applied to different pages.
+
+### env varialbe
+
+- NEXTAUTH_SECRET<br/>
+  generated locally
+- GITHUB_SECRET<br/>
+  login to github, go to setting, then developer setting and auth configure,
+- GITHUB_ID
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -1,11 +1,24 @@
 # Authentication with [NextAuth](https://next-auth.js.org/)
 
-In this project we applied authentication with github and with menual username and password. when we login using user name and password there will be no images. And when we login with github, we are showing the images of the github account. <b>Always remember to config 'next.config.js' when pulling images from thrid party auth provider</b>
+### Role Base Authorization
+In this lesson we will implement role base authencation and authorization. <b>Remember every third party auth providre does not sent the same profile info. Check before modifying them.</b> Go through all file for better understanding.
+</br>
+Page access
 
-seee the given file
+- Home page can be accessed by anyone
+- Client page can only be accessed by the "admin" or "manager"
+- Extra page can be only accessed by the "admin"
+
+Main changes applied on
 
 - api/auth/[...nextauth]/route.js
 - api/auth/[...nextauth]/options.js
+- middleware
+  </br>see other files too, there are minor changes</br>
+
+added type in
+
+- next-auth.d.ts
 
 you don't have to create a signIn or signOut page next-auth will provide it. you just have to use the below paths
 

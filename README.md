@@ -1,6 +1,9 @@
 # Authentication with [NextAuth](https://next-auth.js.org/)
 
+#### See the explanation of "Authentication basic" in second commit [(tutorial)](https://youtu.be/w2h54xz6Ndw?si=5IACfUlCM5S0PZ7h)
+
 ### Role Base Authorization
+
 In this lesson we will implement role base authencation and authorization. <b>Remember every third party auth providre does not sent the same profile info. Check before modifying them.</b> Go through all file for better understanding.
 </br>
 Page access
